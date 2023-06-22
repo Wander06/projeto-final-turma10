@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+
+}
+
+#pagCuriosidades{
+    background-color: rgb(252, 166, 166);
+    height: 658px;
+    text-align: center;
+}
+
+#curiosidades {
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+    width: 40%;
+    border-radius: 20px;
+    margin-left: 400px;
+    text-align: left;
+    border: 2px solid;
+    font-size: 20px;
+}
