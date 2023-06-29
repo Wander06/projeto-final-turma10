@@ -1,23 +1,20 @@
-import Title from "../../components/title"
-import { Link } from "react-router-dom"
+import "./style.css";
+import Header from "../../components/header";
+import Footer from "../../components/footer";
+import fotoTurma from "../PaginaFotos/fotosTurma/PHOTO-2023-04-11-16-43-04.jpg"
 
 const Inicio = () => {
-    const clicar = () =>{
-        alert("Olá eu sou um evento")
-    }
 
     return(
         <>
-            <Title text="Opa, aqui é o Home" />
-            <button onClick={clicar} >Clica</button>
-            <br/>
-            <Link to="/hobby" >Hobbyes</Link>
-            <br/>
-            <Link to="/curiosidades">Curiosidades</Link>
-            <br/>
-            <Link to="/contador">Contador</Link>
-            <br/>
-            <Link to="/pokemon">Pokemon</Link>
+            <main className="home">
+                <Header text="Projeto final Turma 10"/>
+                    <div className="containerImg">
+                        <h2>Minha foto favorita com a turma toda hehehe</h2>
+                        <img className="fotoTurma" src={fotoTurma}/>
+                    </div>
+                <Footer/>
+            </main>
         </>
     )
 }

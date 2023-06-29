@@ -1,0 +1,27 @@
+.cabecalho{
+    background-color: rgb(25, 25, 33);
+    font-size: 40px;
+    text-align: center;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.tituloCabecalho{
+    color: white;
+}
+
+.containerLinks{
+    background-color: rgb(193, 13, 13);
+    margin-top: 50px;
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.links{
+    border: 1px rgb(159, 206, 234) solid;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+}

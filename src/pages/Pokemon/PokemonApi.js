@@ -2,6 +2,8 @@ import {useState, useEffect} from "react";
 import axios from "axios";
 import "./index.css"
 import pokebola from "../imagens/pokebola-go.png"
+import Footer from "../../components/footer";
+import { Link } from "react-router-dom";
 
 
 const Pokemon = () => {
@@ -22,23 +24,33 @@ const Pokemon = () => {
     return(
         <div>
             <header id="cabecalhoPoke">
-                <h1 id="tituloPokemon" >Pokémon</h1>
                 <img id="pokebola1" src={pokebola}></img>
+                <h1 id="tituloPokemon" >Pokémon</h1>
                 <img id="pokebola2" src={pokebola}></img>
             </header>
-            <div id="secao">
-                <ul>
+            <div className="containerPokemonLinks">
+                    <Link className="linksPokemon" to="/">Home</Link>
+                    <Link className="linksPokemon" to="/pokemon">Pokémon</Link>
+                    <Link className="linksPokemon" to="/paginaFotos">Recordações</Link>
+                </div>
+            <div className="container">
+                <h1>
+                    
+                </h1>
+                <div className="containerCards">
                     {pokemon.map(pokemon => (
-                        <li className="listaPokemon">
+                        <div className="cardsPokemon">
                             <h3 className="nomePokemon">{pokemon.name}</h3>
                             <div className="divPokemon">
                             <img className="imgPokemon" src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.url.split('/')[6]}.png`} />
                             </div>                    
-                        </li>
+                        </div>
                     ))}
-                </ul>
+                </div>
             </div>
+            <Footer/>
         </div>
+     
     )
 }
 

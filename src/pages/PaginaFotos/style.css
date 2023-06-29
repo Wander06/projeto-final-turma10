@@ -1,0 +1,84 @@
+.mainFotos{
+    background-color: bisque;
+}
+
+.containerFotos1{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 40px;
+    margin-bottom: -100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.containerFotos2{
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+
+
+.fotos{
+    width: 450px;
+    height: 350px;
+    border: 10px white solid;
+    border-top: 20px white solid;
+    border-bottom: 160px white solid;
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 1624px) {
+    .fotos{
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1474px) {
+    .containerFotos1{
+        margin-left: 100px;
+        margin-right: 100px;
+        padding-top: 40px;
+        margin-bottom: -100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+
+    .containerFotos2{
+        margin-left: 100px;
+        margin-right: 100px;
+        padding-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1324px) {
+    .containerFotos1{
+        margin-left: 100px;
+        margin-right: 100px;
+        padding-top: 40px;
+        margin-bottom: -100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .containerFotos2{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+}

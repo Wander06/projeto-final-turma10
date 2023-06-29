@@ -3,61 +3,104 @@
 }
 
 body{
-    background-color: rgb(116, 4, 4);
     
 }
 
 #cabecalhoPoke{
     background-image: url("../imagens/wp2828100.jpg");
     background-attachment:fixed;
+    display: flex;
+    justify-content: space-around;
+    
+
 }
 #tituloPokemon{
     -webkit-text-stroke-width: 6px;
     -webkit-text-stroke-color: #00408a;
     -webkit-text-fill-color: rgb(243, 229, 33);
     text-align: center;
-    margin-bottom: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 150px;
     letter-spacing: -8px;
 }
 
 #pokebola1{
-    width: 150px;
-    position: absolute;
-    top: 20px;
-    left: 150px;
+    width: 180px;
 }
 #pokebola2{
-    width: 150px;
-    position: absolute;
-    top: 20px;
-    right: 150px;
+    width: 180px;
 }
 
-.listaPokemon{
-    display: inline-block;
+.containerPokemonLinks{
+    background-color: rgb(35, 53, 174);
+    display: flex;
+    justify-content: space-around;
 }
+
+.linksPokemon{
+    border: 1px rgb(159, 206, 234) solid;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.container{
+    display: flex;
+}
+
+.containerCards{
+    background-color: rgb(116, 4, 4);
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.cardsPokemon{
+    border: 3px black solid;
+    border-radius: 20px;
+    width: 450px;
+    height: 420px;
+    margin-top: 50px;
+    margin-left: 40px;
+    background-image: linear-gradient( rgb(250, 0, 0), gray, rgb(255, 255, 255)); 
+}
+
 
 .nomePokemon{
     background-color: black;
-    border-radius: 5px;
+    border-radius: 15px 15px 0px 0px;
     text-align: center;
-    margin-left: 250px;
     position: relative;
-    right: 100px;
     color: gold;
 }
 
 .imgPokemon{
-    border: 3px black solid;
-    border-radius: 20px;
-    width: 350px;
-    height: 300px;
-    margin-left: 40px;
-    background-image: linear-gradient( rgb(250, 0, 0), gray, rgb(255, 255, 255)); 
-    /* background-image: url("Pokémon_GO_logo.svg.png");
-    background-size: 100%;
-    background-repeat: no-repeat; */
+    width: 450px;
+    height: 400px;
+   
 }
 
+@media screen and (max-width: 600px ) {
+    .cardsPokemon{
+        width: 320px;
+        height: 300px;
+    }
+    .imgPokemon{
+        width: 320px;
+        height: 270px;
+    }
+    #pokebola1, #pokebola2{
+        width: 70px;
+        height: 70px;
+    }
+    #tituloPokemon{
+        font-size: 70px;
+        -webkit-text-stroke-width: 3px;
+    }
+}

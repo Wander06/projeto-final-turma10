@@ -1,0 +1,37 @@
+.home{
+    background-color: rgb(199, 199, 199);
+    color: rgb(5, 74, 14);
+}
+
+.containerImg{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.fotoTurma{
+    width: 1000px;
+    height: 650px;
+}
+
+@media screen and (max-width:1015px) {
+    .fotoTurma{
+        width: 800px;
+        height: 550px;
+    }
+    
+}
+
+@media screen and (max-width:816px) {
+    .fotoTurma{
+        width: 600px;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width:616px) {
+    .fotoTurma{
+        width: 480px;
+        height: 350px;
+    }
+}
