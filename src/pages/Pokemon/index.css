@@ -7,7 +7,7 @@ body{
 }
 
 #cabecalhoPoke{
-    background-image: url("../imagens/wp2828100.jpg");
+    background-image: url(../imagens/BXaygYm.jpeg);
     background-attachment:fixed;
     display: flex;
     justify-content: space-around;
@@ -52,7 +52,7 @@ body{
 }
 
 .containerCards{
-    background-color: rgb(116, 4, 4);
+    background-color: rgb(16, 0, 138);
     display: flex;
     flex: 1;
     flex-wrap: wrap;
@@ -66,18 +66,25 @@ body{
     border-radius: 20px;
     width: 450px;
     height: 420px;
+    margin: 25px;
     margin-top: 50px;
-    margin-left: 40px;
-    background-image: linear-gradient( rgb(250, 0, 0), gray, rgb(255, 255, 255)); 
+    background-image: url(../imagens/d67c3cbce4d7e9355e8522e10434d76c.jpeg);
+    background-size: 200%;
+    /* background-image: linear-gradient( rgb(250, 0, 0), gray, rgb(255, 255, 255));  */
 }
 
 
 .nomePokemon{
-    background-color: black;
+    background-color: rgb(10, 10, 10);
     border-radius: 15px 15px 0px 0px;
     text-align: center;
+    font-size: 30px;
+    text-transform:capitalize;
     position: relative;
-    color: gold;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-stroke-width: 1.6px;
+    -webkit-text-stroke-color: #00408a;
+    -webkit-text-fill-color: rgb(243, 229, 33);
 }
 
 .imgPokemon{
@@ -86,15 +93,55 @@ body{
    
 }
 
-@media screen and (max-width: 600px ) {
+@media screen and (max-width:1532px) {
     .cardsPokemon{
-        width: 320px;
-        height: 300px;
+        width: 370px;
+        height: 340px;
     }
+        .imgPokemon{
+            width: 350px;
+            height: 300px;
+           
+        }
+}
+
+@media screen and (max-width:1292px) {
+    .cardsPokemon{
+    width: 340px;
+    height: 340px;
+}
+    .imgPokemon{
+        width: 350px;
+        height: 300px;
+       
+    }
+}
+
+
+@media screen and (max-width:1202px) {
+    .cardsPokemon{
+    width: 320px;
+    height: 300px;
+}
     .imgPokemon{
         width: 320px;
         height: 270px;
+       
     }
+}
+
+@media screen and (max-width: 994px ) {
+    #pokebola1, #pokebola2{
+        width: 90px;
+        height: 90px;
+    }
+    #tituloPokemon{
+        font-size: 90px;
+        -webkit-text-stroke-width: 3px;
+    }
+}
+
+@media screen and (max-width: 544px ) {
     #pokebola1, #pokebola2{
         width: 70px;
         height: 70px;
