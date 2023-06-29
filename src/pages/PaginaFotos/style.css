@@ -28,20 +28,20 @@
 .fotos{
     width: 450px;
     height: 350px;
-    border: 10px white solid;
+    border: 13px white solid;
     border-top: 20px white solid;
-    border-bottom: 160px white solid;
+    border-bottom: 200px white solid;
     margin-bottom: 80px;
 }
 
-@media screen and (max-width: 1624px) {
+@media screen and (max-width: 1644px) {
     .fotos{
         width: 400px;
         height: 300px;
     }
 }
 
-@media screen and (max-width: 1474px) {
+@media screen and (max-width: 1492px) {
     .containerFotos1{
         margin-left: 100px;
         margin-right: 100px;
